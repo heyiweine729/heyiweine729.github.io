@@ -25,23 +25,25 @@ menu:
       weight: 40
 
 params:
-  env: production
-  description: "保持热爱，奔赴山海。"
-  author: "Sanjin"
+  # 1. 核心视觉：白底黑字，最耐看
+  defaultTheme: light 
   
-  # 主页设置
+  # 2. 首页设置：让欢迎语更有艺术感
   homeInfoParams:
-    Title: "一万年太久，之争朝夕"
-    Content: "每一天都是人生最年轻的一天"
+    Title: "Sanjin's Space"
+    Content: >
+      **每天都是人生最年轻的一天**
+      
+      zju
 
-  # 界面美化
-  defaultTheme: auto # 自动跟随系统（白天/黑夜模式）
-  ShowCodeCopyButtons: true # 开启代码一键复制
-  ShowReadingTime: true # 显示阅读时间
-  displayFullContent: false
-  ShowPostNavLinks: true # 显示上一篇/下一篇文章
-
-  # 社交链接 (选填)
+  # 3. 社交图标：只放最干净的
   socialIcons:
     - name: github
       url: "https://github.com/heyiweine729"
+    - name: email
+      url: "mailto:your-email@zju.edu.cn"
+
+  # 4. 功能开关
+  ShowToc: true
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true

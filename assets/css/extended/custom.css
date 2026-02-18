@@ -1,52 +1,70 @@
-
-@font-face {
-    font-family: 'MaoTi';
-    src: url('/fonts/maoti.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* 应用到网站标题 */
-.logo a {
-    font-family: 'MaoTi', sans-serif;
-    font-size: 32px;            /* 根据需要调整大小 */
-    color: #FFDE00 !important;  /* 标题使用金黄色，更有质感 */
-    letter-spacing: 2px;        /* 增加字间距，更有书法张力 */
-}/* 设置红旗主题色调 */
+/* --- 字体艺术与清晰度 --- */
 :root {
-    --theme: #DE2910;           /* 红旗红背景 */
-    --entry: #e63920;           /* 列表卡片稍浅一点的红，增加层次感 */
-    --primary: #FFFFFF;         /* 主文字设为白色 */
-    --secondary: #FFDE00;       /* 次要文字或链接设为“五星金” */
-    --tertiary: #c0220d;        /* 边框颜色 */
-    --content: #FFFFFF;
+    /* 标题使用具有人文气息的衬线体：学术且艺术 */
+    --font-heading: "Optima", "Charter", "Georgia", "Times New Roman", serif;
+    /* 正文使用现代清晰的无衬线体：易读且高级 */
+    --font-body: "-apple-system", "BlinkMacSystemFont", "Inter", "Segoe UI", sans-serif;
+
+    /* 清晰的色调：珍珠白背景 + 碳素黑文字 */
+    --theme: #fdfdfd;           /* 极浅的暖白，比纯白更高级 */
+    --primary: #1a1a1a;         /* 深炭黑文字，对比度清晰 */
+    --secondary: #666666;       /* 次要信息灰色 */
+    --tertiary: #f0f0f0;        /* 极细的分割线 */
+    
+    /* 艺术点缀色：浙大蓝 (深邃、专业) */
+    --accent: #003e91;
 }
 
-/* 强制背景颜色应用 */
+/* --- 全局样式 --- */
 body {
+    font-family: var(--font-body);
     background-color: var(--theme);
-    color: var(--primary);
+    line-height: 1.8; /* 增加行间距，大气 */
 }
 
-/* 调整标题栏和卡片的视觉效果 */
-.main {
-    background: transparent;
-}
-
-.post-entry {
-    background: var(--entry) !important;
-    border: 1px solid var(--tertiary) !important;
-}
-/* 深色模式下变为红色主题 */
-.dark {
-    --theme: #DE2910;
-    --entry: #e63920;
-    --primary: #FFFFFF;
-    --secondary: #FFDE00;
-    --tertiary: #c0220d;
-}
-
-/* 无论什么模式，标题都用毛体 */
+/* 网站标题：艺术且醒目 */
 .logo a {
-    font-family: 'MaoTi', sans-serif;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 28px;
+    color: var(--primary) !important;
+}
+
+/* 文章标题 */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    margin-top: 1.5em;
+}
+
+/* 文章卡片：简约悬浮感 */
+.post-entry {
+    background: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    margin-bottom: 20px !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: var(--accent) !important;
+}
+
+/* 链接色：克制的点缀 */
+a {
+    color: inherit;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+/* 响应式调整：让内容在屏幕中间，更有氛围 */
+.main {
+    max-width: 760px; /* 窄版布局，阅读更专注 */
 }

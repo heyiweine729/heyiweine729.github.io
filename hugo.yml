@@ -31,7 +31,7 @@ params:
   
   # 主页设置
   homeInfoParams:
-    Title: "你好，我是 Sanjin 👋"
+    Title: "一万年太久，之争朝夕"
     Content: "每一天都是人生最年轻的一天"
 
   # 界面美化

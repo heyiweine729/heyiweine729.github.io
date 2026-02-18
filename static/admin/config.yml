@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: heyiweine729/heyiweine729.github.io  # 你的仓库 (千万别改错)
+  branch: main
+  # 这一行是为了让你在本地也能测试 (可选)
+  site_domain: heyiweine729.github.io
+
+# 图片上传配置
+media_folder: "static/images"  # 图片实际存放在哪
+public_folder: "/images"       # 文章里怎么引用图片
+
+# 网站文章内容配置
+collections:
+  # 1. 碎碎念/日记板块
+  - name: "life"
+    label: "生活碎片 (Life)"
+    folder: "content/life"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}" # 文件名自动设为日期
+    editor:
+      preview: false
+    fields:
+      - {label: "日期 (标题)", name: "title", widget: "string"}
+      - {label: "发布时间", name: "date", widget: "datetime"}
+      - {label: "正文", name: "body", widget: "markdown"}
+      - {label: "配图", name: "cover", widget: "image", required: false}
+
+  # 2. 技术文章板块
+  - name: "posts"
+    label: "技术文章 (Posts)"
+    folder: "content/posts"
+    create: true
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布时间", name: "date", widget: "datetime"}
+      - {label: "标签", name: "tags", widget: "list", required: false}
+      - {label: "正文", name: "body", widget: "markdown"}

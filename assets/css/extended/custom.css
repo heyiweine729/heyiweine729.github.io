@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'MaoTi';
+    src: url('/fonts/maoti.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用到网站标题 */
+.logo a {
+    font-family: 'MaoTi', sans-serif;
+    font-size: 32px;            /* 根据需要调整大小 */
+    color: #FFDE00 !important;  /* 标题使用金黄色，更有质感 */
+    letter-spacing: 2px;        /* 增加字间距，更有书法张力 */
+}/* 设置红旗主题色调 */
+:root {
+    --theme: #DE2910;           /* 红旗红背景 */
+    --entry: #e63920;           /* 列表卡片稍浅一点的红，增加层次感 */
+    --primary: #FFFFFF;         /* 主文字设为白色 */
+    --secondary: #FFDE00;       /* 次要文字或链接设为“五星金” */
+    --tertiary: #c0220d;        /* 边框颜色 */
+    --content: #FFFFFF;
+}
+
+/* 强制背景颜色应用 */
+body {
+    background-color: var(--theme);
+    color: var(--primary);
+}
+
+/* 调整标题栏和卡片的视觉效果 */
+.main {
+    background: transparent;
+}
+
+.post-entry {
+    background: var(--entry) !important;
+    border: 1px solid var(--tertiary) !important;
+}
+/* 深色模式下变为红色主题 */
+.dark {
+    --theme: #DE2910;
+    --entry: #e63920;
+    --primary: #FFFFFF;
+    --secondary: #FFDE00;
+    --tertiary: #c0220d;
+}
+
+/* 无论什么模式，标题都用毛体 */
+.logo a {
+    font-family: 'MaoTi', sans-serif;
+}

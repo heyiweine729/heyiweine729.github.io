@@ -1,50 +1,47 @@
 baseURL: "https://heyiweine729.github.io/"
-title: "Sanjin's Log"
+title: "Sanjin's Space"
 theme: "PaperMod"
 languageCode: "zh-cn"
-defaultContentLanguage: "zh"
+hasCJKLanguage: true # 开启中文优化
 
-params:
-  env: production
-  title: Sanjin's Log
-  description: "记录学习与浙大生活"
-  author: "Sanjin"
-  # 默认开启暗色模式，保护视力
-  defaultTheme: dark
-  
-  # 首页显示的社交链接（以后填）
-  socialIcons:
-    - name: github
-      url: "https://github.com/"
-  mainSections:
-    - cs50
-    - stm32
-    - posts
-    - life
-
+# 菜单配置
 menu:
   main:
     - identifier: cs50
-      name: "CS50 课程"    # 菜单上显示的名字
-      url: /cs50/          # 对应刚才新建的文件夹名
-      weight: 10           # 排序权重，越小越靠左
-
+      name: "🚀 CS50"
+      url: /cs50/
+      weight: 10
     - identifier: stm32
-      name: "STM32 笔记"
+      name: "🛠️ STM32"
       url: /stm32/
       weight: 20
-
-    - identifier: archives
-      name: "归档"
-      url: /archives/
-      weight: 30
-
-    - identifier: search
-      name: "搜索"
-      url: /search/
-      weight: 40
-
     - identifier: life
-      name: "碎片"        # 菜单上显示的名字，也可以叫“生活”、“日记”
+      name: "☕ 碎片"
       url: /life/
       weight: 30
+    - identifier: archives
+      name: "📅 归档"
+      url: /archives/
+      weight: 40
+
+params:
+  env: production
+  description: "保持热爱，奔赴山海。"
+  author: "Sanjin"
+  
+  # 主页设置
+  homeInfoParams:
+    Title: "你好，我是 Sanjin 👋"
+    Content: "每一天都是人生最年轻的一天"
+
+  # 界面美化
+  defaultTheme: auto # 自动跟随系统（白天/黑夜模式）
+  ShowCodeCopyButtons: true # 开启代码一键复制
+  ShowReadingTime: true # 显示阅读时间
+  displayFullContent: false
+  ShowPostNavLinks: true # 显示上一篇/下一篇文章
+
+  # 社交链接 (选填)
+  socialIcons:
+    - name: github
+      url: "https://github.com/heyiweine729"

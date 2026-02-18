@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sanjin&#39;s Log</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Sanjin&#39;s Log</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 21:45:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STM32 学习笔记：Part 1 - 芯片简介与最小系统</title>
+      <link>http://localhost:1313/stm32/stm32-intro/</link>
+      <pubDate>Wed, 18 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/stm32/stm32-intro/</guid>
+      <description>从 Cortex-M3 内核架构到最小系统电路。深入理解 STM32F103 的存储器映射、启动模式及 GPIO 的八种工作模式。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 6 - Python</title>
+      <link>http://localhost:1313/cs50/cs50-week-6/</link>
+      <pubDate>Wed, 18 Feb 2026 21:35:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-6/</guid>
+      <description>从 C 语言的手动挡切换到 Python 的自动挡。体验不再需要管理内存的快乐，掌握列表、字典与模块化编程。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 5 - 数据结构 (Data Structures)</title>
+      <link>http://localhost:1313/cs50/cs50-week-5/</link>
+      <pubDate>Wed, 18 Feb 2026 21:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-5/</guid>
+      <description>从队列到栈，从链表到哈希表。用指针和结构体亲手构建现代编程语言的基石。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 4 - 内存与指针 (Memory)</title>
+      <link>http://localhost:1313/cs50/cs50-week-4/</link>
+      <pubDate>Wed, 18 Feb 2026 21:25:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-4/</guid>
+      <description>深入 C 语言最危险的领域：内存与指针。掌握十六进制、栈与堆的区别，以及手动管理内存的艺术。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 3 - 算法与效率的艺术</title>
+      <link>http://localhost:1313/cs50/cs50-week-3/</link>
+      <pubDate>Wed, 18 Feb 2026 21:22:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-3/</guid>
+      <description>从线性查找到二分查找，从冒泡排序到归并排序。理解大O表示法，掌握衡量代码效率的数学语言。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 2 - 数组与编译背后的秘密</title>
+      <link>http://localhost:1313/cs50/cs50-week-2/</link>
+      <pubDate>Wed, 18 Feb 2026 21:17:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-2/</guid>
+      <description>深入编译器的黑盒：预处理、编译、汇编、链接。探索数组、字符串与调试的艺术。</description>
+    </item>
+    <item>
+      <title>CS50 学习日志：Week 1 - C 语言与计算机基础</title>
+      <link>http://localhost:1313/cs50/cs50-week-1/</link>
+      <pubDate>Wed, 18 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-1/</guid>
+      <description>告别 Scratch，进入 C 语言的世界。探索编译器、命令行、内存溢出以及计算机的底层思考逻辑。</description>
+    </item>
+  </channel>
+</rss>

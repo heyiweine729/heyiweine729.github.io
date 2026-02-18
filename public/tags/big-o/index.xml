@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Big O on Sanjin&#39;s Log</title>
+    <link>http://localhost:1313/tags/big-o/</link>
+    <description>Recent content in Big O on Sanjin&#39;s Log</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 21:22:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/big-o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CS50 学习日志：Week 3 - 算法与效率的艺术</title>
+      <link>http://localhost:1313/cs50/cs50-week-3/</link>
+      <pubDate>Wed, 18 Feb 2026 21:22:00 +0800</pubDate>
+      <guid>http://localhost:1313/cs50/cs50-week-3/</guid>
+      <description>从线性查找到二分查找，从冒泡排序到归并排序。理解大O表示法，掌握衡量代码效率的数学语言。</description>
+    </item>
+  </channel>
+</rss>

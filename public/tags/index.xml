@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Sanjin&#39;s Log</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Sanjin&#39;s Log</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 21:45:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cortex-M3</title>
+      <link>http://localhost:1313/tags/cortex-m3/</link>
+      <pubDate>Wed, 18 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/cortex-m3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Embedded</title>
+      <link>http://localhost:1313/tags/embedded/</link>
+      <pubDate>Wed, 18 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/embedded/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/tags/hardware/</link>
+      <pubDate>Wed, 18 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>STM32</title>
+      <link>http://localhost:1313/tags/stm32/</link>
+      <pubDate>Wed, 18 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/stm32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS50</title>
+      <link>http://localhost:1313/tags/cs50/</link>
+      <pubDate>Wed, 18 Feb 2026 21:35:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/cs50/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Migration</title>
+      <link>http://localhost:1313/tags/migration/</link>
+      <pubDate>Wed, 18 Feb 2026 21:35:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/migration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Wed, 18 Feb 2026 21:35:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Wed, 18 Feb 2026 21:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hash Table</title>
+      <link>http://localhost:1313/tags/hash-table/</link>
+      <pubDate>Wed, 18 Feb 2026 21:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/hash-table/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linked List</title>
+      <link>http://localhost:1313/tags/linked-list/</link>
+      <pubDate>Wed, 18 Feb 2026 21:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/linked-list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>http://localhost:1313/tags/c/</link>
+      <pubDate>Wed, 18 Feb 2026 21:25:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory Management</title>
+      <link>http://localhost:1313/tags/memory-management/</link>
+      <pubDate>Wed, 18 Feb 2026 21:25:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/memory-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pointers</title>
+      <link>http://localhost:1313/tags/pointers/</link>
+      <pubDate>Wed, 18 Feb 2026 21:25:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/pointers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/tags/algorithm/</link>
+      <pubDate>Wed, 18 Feb 2026 21:22:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Big O</title>
+      <link>http://localhost:1313/tags/big-o/</link>
+      <pubDate>Wed, 18 Feb 2026 21:22:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/big-o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sorting</title>
+      <link>http://localhost:1313/tags/sorting/</link>
+      <pubDate>Wed, 18 Feb 2026 21:22:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/sorting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/tags/debugging/</link>
+      <pubDate>Wed, 18 Feb 2026 21:17:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编译原理</title>
+      <link>http://localhost:1313/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Wed, 18 Feb 2026 21:17:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ZJU</title>
+      <link>http://localhost:1313/tags/zju/</link>
+      <pubDate>Wed, 18 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/zju/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>计算机基础</title>
+      <link>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 18 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>CS50 学习日志：Week 1 - C 语言与计算机基础 | Sanjin&#39;s Log</title>
+<meta name="keywords" content="CS50, C, 计算机基础, ZJU">
+<meta name="description" content="告别 Scratch，进入 C 语言的世界。探索编译器、命令行、内存溢出以及计算机的底层思考逻辑。">
+<meta name="author" content="Sanjin">
+<link rel="canonical" href="http://localhost:1313/cs50/cs50-week-1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/cs50/cs50-week-1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/cs50/cs50-week-1/">
+  <meta property="og:site_name" content="Sanjin&#39;s Log">
+  <meta property="og:title" content="CS50 学习日志：Week 1 - C 语言与计算机基础">
+  <meta property="og:description" content="告别 Scratch，进入 C 语言的世界。探索编译器、命令行、内存溢出以及计算机的底层思考逻辑。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cs50">
+    <meta property="article:published_time" content="2026-02-18T16:00:00+08:00">
+    <meta property="article:modified_time" content="2026-02-18T16:00:00+08:00">
+    <meta property="article:tag" content="CS50">
+    <meta property="article:tag" content="C">
+    <meta property="article:tag" content="计算机基础">
+    <meta property="article:tag" content="ZJU">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CS50 学习日志：Week 1 - C 语言与计算机基础">
+<meta name="twitter:description" content="告别 Scratch，进入 C 语言的世界。探索编译器、命令行、内存溢出以及计算机的底层思考逻辑。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Cs50s",
+      "item": "http://localhost:1313/cs50/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "CS50 学习日志：Week 1 - C 语言与计算机基础",
+      "item": "http://localhost:1313/cs50/cs50-week-1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CS50 学习日志：Week 1 - C 语言与计算机基础",
+  "name": "CS50 学习日志：Week 1 - C 语言与计算机基础",
+  "description": "告别 Scratch，进入 C 语言的世界。探索编译器、命令行、内存溢出以及计算机的底层思考逻辑。",
+  "keywords": [
+    "CS50", "C", "计算机基础", "ZJU"
+  ],
+  "articleBody": "CS50 学习日志：Week 1 - C 语言与计算机基础 学习进度：已完成 关键主题：编译器、命令行、基础语法、内存溢出\n💻 核心概览：Hello, C World 状态：已掌握\n告别了 Week 0 的 Scratch 积木块，Week 1 带我进入了真正的代码世界。虽然 C 语言 看起来古老且严苛，但它是理解计算机如何“思考”的基石。\n正如课程所强调的，这一周不仅是学习语法，更是关于 正确性 (Correctness)、设计 (Design) 和 代码风格 (Style) 的一种修行 [1]。\n🔑 关键概念 (Key Concepts) 在这一章中，我深入接触了计算机科学最底层的逻辑：\n从源代码到机器码 (Source Code to Machine Code) 理解了 编译器 (Compiler) 的作用：将人类可读的代码转换为计算机可执行的二进制指令 (0和1) [1]。 开发环境与工具 开始使用 Visual Studio Code 和 Linux 命令行。 学习了 CLI (命令行界面) 的基础操作，不再依赖鼠标，而是通过命令与系统对话 [1]。 C 语言基础语法 变量与类型 (Variables \u0026 Types): 必须明确告诉计算机每个数据是什么类型（如 int, float, char 等）[1]。 头文件与库 (Header Files \u0026 Libraries): 学会了如何引入标准库（如 ）来使用现成的功能 [1]。 循环与条件 (Loops \u0026 Conditionals): 控制程序的逻辑流。 计算机的局限性 整数溢出 (Integer Overflow): 当数字超过计算机存储上限时会发生什么？ 浮点数精度问题 (Floating-Point Imprecision): 计算机在处理小数时并不总是完美的 [1]。 📺 补充学习资源 (Shorts) 来源：Week 1 课程资料\n讲座搭建了骨架，而 Shorts 视频填充了具体的血肉。特别是以下几个短视频对我理解 C 语言的细节非常有帮助 [2]：\nData Types (数据类型): 深入理解不同类型占用的内存大小。 Operators (运算符): 处理算术和逻辑运算。 Conditional Statements (条件语句): if, else, switch 的用法。 Loops (循环): for, while, do-while 的区别。 Command Line (命令行): 如何在终端中高效操作。 Magic Numbers (魔术数字): 为什么我们要避免在代码中直接使用不明意义的数字。 ",
+  "wordCount" : "137",
+  "inLanguage": "zh",
+  "datePublished": "2026-02-18T16:00:00+08:00",
+  "dateModified": "2026-02-18T16:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sanjin"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/cs50/cs50-week-1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sanjin's Log",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Sanjin&#39;s Log (Alt + H)">Sanjin&#39;s Log</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/cs50/" title="CS50 课程">
+                    <span>CS50 课程</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/stm32/" title="STM32 笔记">
+                    <span>STM32 笔记</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      CS50 学习日志：Week 1 - C 语言与计算机基础
+    </h1>
+    <div class="post-meta"><span title='2026-02-18 16:00:00 +0800 CST'>2026年2月18日</span>&nbsp;·&nbsp;<span>Sanjin</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="cs50-学习日志week-1---c-语言与计算机基础">CS50 学习日志：Week 1 - C 语言与计算机基础<a hidden class="anchor" aria-hidden="true" href="#cs50-学习日志week-1---c-语言与计算机基础">#</a></h1>
+<blockquote>
+<p>学习进度：已完成
+关键主题：编译器、命令行、基础语法、内存溢出</p>
+</blockquote>
+<hr>
+<h2 id="-核心概览hello-c-world">💻 核心概览：Hello, C World<a hidden class="anchor" aria-hidden="true" href="#-核心概览hello-c-world">#</a></h2>
+<p><em>状态：已掌握</em></p>
+<p>告别了 Week 0 的 Scratch 积木块，Week 1 带我进入了真正的代码世界。虽然 <strong>C 语言</strong> 看起来古老且严苛，但它是理解计算机如何“思考”的基石。</p>
+<p>正如课程所强调的，这一周不仅是学习语法，更是关于 <strong>正确性 (Correctness)</strong>、<strong>设计 (Design)</strong> 和 <strong>代码风格 (Style)</strong> 的一种修行 [1]。</p>
+<h3 id="-关键概念-key-concepts">🔑 关键概念 (Key Concepts)<a hidden class="anchor" aria-hidden="true" href="#-关键概念-key-concepts">#</a></h3>
+<p>在这一章中，我深入接触了计算机科学最底层的逻辑：</p>
+<ol>
+<li><strong>从源代码到机器码 (Source Code to Machine Code)</strong>
+<ul>
+<li>理解了 <strong>编译器 (Compiler)</strong> 的作用：将人类可读的代码转换为计算机可执行的二进制指令 (0和1) [1]。</li>
+</ul>
+</li>
+<li><strong>开发环境与工具</strong>
+<ul>
+<li>开始使用 <strong>Visual Studio Code</strong> 和 <strong>Linux</strong> 命令行。</li>
+<li>学习了 <strong>CLI (命令行界面)</strong> 的基础操作，不再依赖鼠标，而是通过命令与系统对话 [1]。</li>
+</ul>
+</li>
+<li><strong>C 语言基础语法</strong>
+<ul>
+<li><strong>变量与类型 (Variables &amp; Types)</strong>: 必须明确告诉计算机每个数据是什么类型（如 <code>int</code>, <code>float</code>, <code>char</code> 等）[1]。</li>
+<li><strong>头文件与库 (Header Files &amp; Libraries)</strong>: 学会了如何引入标准库（如 <code>&lt;stdio.h&gt;</code>）来使用现成的功能 [1]。</li>
+<li><strong>循环与条件 (Loops &amp; Conditionals)</strong>: 控制程序的逻辑流。</li>
+</ul>
+</li>
+<li><strong>计算机的局限性</strong>
+<ul>
+<li><strong>整数溢出 (Integer Overflow)</strong>: 当数字超过计算机存储上限时会发生什么？</li>
+<li><strong>浮点数精度问题 (Floating-Point Imprecision)</strong>: 计算机在处理小数时并不总是完美的 [1]。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-补充学习资源-shorts">📺 补充学习资源 (Shorts)<a hidden class="anchor" aria-hidden="true" href="#-补充学习资源-shorts">#</a></h2>
+<p><em>来源：Week 1 课程资料</em></p>
+<p>讲座搭建了骨架，而 Shorts 视频填充了具体的血肉。特别是以下几个短视频对我理解 C 语言的细节非常有帮助 [2]：</p>
+<ul>
+<li><strong>Data Types (数据类型)</strong>: 深入理解不同类型占用的内存大小。</li>
+<li><strong>Operators (运算符)</strong>: 处理算术和逻辑运算。</li>
+<li><strong>Conditional Statements (条件语句)</strong>: <code>if</code>, <code>else</code>, <code>switch</code> 的用法。</li>
+<li><strong>Loops (循环)</strong>: <code>for</code>, <code>while</code>, <code>do-while</code> 的区别。</li>
+<li><strong>Command Line (命令行)</strong>: 如何在终端中高效操作。</li>
+<li><strong>Magic Numbers (魔术数字)</strong>: 为什么我们要避免在代码中直接使用不明意义的数字。</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/cs50/">CS50</a></li>
+      <li><a href="http://localhost:1313/tags/c/">C</a></li>
+      <li><a href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></li>
+      <li><a href="http://localhost:1313/tags/zju/">ZJU</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Sanjin&#39;s Log</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

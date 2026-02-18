@@ -1,0 +1,44 @@
+baseURL: "https://sanjin.github.io/"
+title: "Sanjin's Log"
+theme: "PaperMod"
+languageCode: "zh-cn"
+defaultContentLanguage: "zh"
+
+params:
+  env: production
+  title: Sanjin's Log
+  description: "记录学习与浙大生活"
+  author: "Sanjin"
+  # 默认开启暗色模式，保护视力
+  defaultTheme: dark
+  
+  # 首页显示的社交链接（以后填）
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+  mainSections:
+    - cs50
+    - stm32
+    - posts
+
+menu:
+  main:
+    - identifier: cs50
+      name: "CS50 课程"    # 菜单上显示的名字
+      url: /cs50/          # 对应刚才新建的文件夹名
+      weight: 10           # 排序权重，越小越靠左
+
+    - identifier: stm32
+      name: "STM32 笔记"
+      url: /stm32/
+      weight: 20
+
+    - identifier: archives
+      name: "归档"
+      url: /archives/
+      weight: 30
+
+    - identifier: search
+      name: "搜索"
+      url: /search/
+      weight: 40

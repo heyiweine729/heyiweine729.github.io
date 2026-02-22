@@ -1,0 +1,17 @@
+[33m23bb37c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m fix too
+[33m8f537de[m fix naked site
+[33m5a073a4[m Apply perfection engineering theme
+[33m48321e8[m Fix build and layout centering
+[33mb076234[m Repair the wrong css code
+[33m6fa589b[m Design: Academic Zen Minimalism
+[33m7726feb[m Design: Academic Zen Minimalism
+[33m84b16e3[m Add Mao-style font and Red-Flag theme
+[33md347061[m Change the title
+[33mc074a6c[m Switch to PaperMod theme and beautify config
+[33m98f1b1c[m Add CMS config
+[33mf7efe82[m Simplify workflow to fix error
+[33mb86acb4[m Fix hugo workflow locally
+[33mbbb1780[m Add GitHub Actions workflow for Hugo site deployment
+[33mf20ec79[m Trigger rebuild
+[33m292523f[m Update baseURL
+[33m83a6ef7[m First commit: deploy my blog

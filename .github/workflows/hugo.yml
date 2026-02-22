@@ -32,9 +32,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          # 关键修改：不要用 'latest'，强制改回 0.122.0
-          # 0.122.0 是 PaperMod 的“黄金适配版”
-          hugo-version: '0.122.0' 
+          # 既大于 0.146.0 满足主题，又小于 0.155.0 避开语法报错
+          hugo-version: '0.154.0' 
           extended: true
 
       - name: Build with Hugo

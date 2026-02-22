@@ -62,7 +62,9 @@
 
 ### 4. 维护指令集 (Maintenance Commands)
 
-* **同步内容**：`git add .` -> `git commit -m "update"` -> `git push`。
+* **同步内容**：git add .
+git commit -m ""
+git push origin main。
 * **强制重置主题**：`git submodule add --force [URL] themes/PaperMod`。
 
 ---

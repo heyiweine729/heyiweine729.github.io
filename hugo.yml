@@ -16,13 +16,17 @@ menu:
       url: /stm32/
       weight: 20
     - identifier: life
-      name: "☕ 碎片"
+      name: "☕ 生活"
       url: /life/
       weight: 30
     - identifier: archives
       name: "📅 归档"
       url: /archives/
       weight: 40
+      menu:
+    - name: "其他"
+      url: "/logs"
+      weight: 30
 
 params:
   # 1. 核心视觉：白底黑字，最耐看

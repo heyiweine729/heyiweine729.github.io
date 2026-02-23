@@ -1,3 +1,9 @@
+---
+title: "建站技术日志 (Build Log)"
+date: 2026-02-22
+tags: ["Blog", "Project"]
+description: "记录那段死磕 Vercel 和 GitHub Actions 的日子。"
+---
 
 # 建站技术日志 (Build Log)
 

@@ -23,31 +23,34 @@ menu:
       name: "📅 归档"
       url: /archives/
       weight: 40
-      menu:
-    - name: "其他"
-      url: "/logs"
-      weight: 30
+    - identifier: logs
+      name: "其他"
+      url: /logs/
+      weight: 50
 
 params:
-  # 1. 核心视觉：白底黑字，最耐看
+  # 1. 核心视觉：白底黑字
   defaultTheme: light 
   
-  # 2. 首页设置：让欢迎语更有艺术感
+  # 2. 首页设置
   homeInfoParams:
     Title: "Sanjin's Space"
     Content: >
       **每天都是人生最年轻的一天**
       
-      zju
+      ZJU Student
 
-  # 3. 社交图标：只放最干净的
+  # 3. 社交图标
   socialIcons:
     - name: github
       url: "https://github.com/heyiweine729"
     - name: email
       url: "mailto:your-email@zju.edu.cn"
 
-  # 4. 功能开关
+  # 4. 功能开关与内容控制
   ShowToc: true
   ShowCodeCopyButtons: true
   ShowReadingTime: true
+  
+  # 核心修复：让归档页面抓取所有平级文件夹的内容
+  mainSections: ["posts", "stm32", "cs50", "logs"]

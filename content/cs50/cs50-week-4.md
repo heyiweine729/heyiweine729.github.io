@@ -52,3 +52,5 @@ categories: ["Study Logs"]
 * **Dynamic Memory Allocation (动态内存分配)**: 详解 `malloc` 的使用场景。
 * **Call Stacks (调用栈)**: 理解函数调用时内存是如何层叠的。
 * **File Pointers (文件指针)**: 如何读取和写入文件 (`fopen`, `fclose`)。
+---
+[[cnote]]

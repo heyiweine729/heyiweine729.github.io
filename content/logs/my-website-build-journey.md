@@ -68,3 +68,8 @@ git push origin main。
 * **强制重置主题**：`git submodule add --force [URL] themes/PaperMod`。
 
 ---
+```
+git add .
+git commit -m "update 2.23"
+git push
+```

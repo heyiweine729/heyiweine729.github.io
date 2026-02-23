@@ -54,3 +54,5 @@ categories: ["Study Logs"]
 * **Debugging ("Step through" & "Step into")**: 手把手教你如何使用调试工具。
 * **Arrays (数组)**: 内存视角的数组存储。
 * **Command Line Arguments (命令行参数)**: 处理 `argc` 和 `argv` 的实战演示 [1]。
+---
+[[cnote]]

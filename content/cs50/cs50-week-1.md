@@ -59,3 +59,5 @@ categories: ["Study Logs"]
 *   **Loops (循环)**: `for`, `while`, `do-while` 的区别。
 *   **Command Line (命令行)**: 如何在终端中高效操作。
 *   **Magic Numbers (魔术数字)**: 为什么我们要避免在代码中直接使用不明意义的数字。
+---
+[[cnote]]

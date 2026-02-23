@@ -56,3 +56,4 @@ categories: ["Study Logs"]
 * **Hash Tables**: 哈希函数的设计与冲突解决。
 * **Tries**: 字典树的构建过程。
 * **Queues & Stacks**: 两种基础 ADT 的实现逻辑。
+[[cnote]]

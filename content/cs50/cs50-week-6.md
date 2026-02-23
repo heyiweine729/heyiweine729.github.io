@@ -42,3 +42,4 @@ categories: ["Study Logs"]
 这一周的 Shorts 视频相对精简，因为讲座本身已经涵盖了大量的实战演示：
 
 * **Python**: 全面介绍 Python 语言特性的核心视频，对比 C 语言的语法差异，帮助快速迁移思维模式。
+[[cnote]]
